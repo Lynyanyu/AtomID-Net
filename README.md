@@ -18,7 +18,7 @@ Place your datasets with images and coordinates under
 ```
 ./datasets/tem/
 ```
-in the form like them in the demostration data. Fill in the catalog files `./datasets/tem_unet_train.csv` and `./datasets/tem_unet_test.csv` for training and testing data respectively. And run:
+in the form like those in the demostration data. Fill in the catalog files `./datasets/tem_unet_train.csv` and `./datasets/tem_unet_test.csv` for training and testing data respectively. And run:
 ```
 python train.py
 ```
