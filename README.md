@@ -1,5 +1,5 @@
 # AtomID-Net
-Project codes for AtomID-Net (https://doi.org/10.1002/smsc.202300031)
+Project codes for AtomID-Net 《A Multiscale Deep-Learning Model for Atom Identification from Low-Signal-to-Noise-Ratio Transmission Electron Microscopy Images》 (https://doi.org/10.1002/smsc.202300031)
 
 # Installation
 ```
