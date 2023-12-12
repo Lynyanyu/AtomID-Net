@@ -11,10 +11,12 @@ from PyQt5.QtCore import *
 from PyQt5.QtGui import *
 from PyQt5.QtWidgets import *
 
+MODEL_PATH = "./models/best_model_0209.pt"
+
 class Example(QWidget):
     def __init__(self):
         super().__init__()
-        self.trained_model_path = "./models/best_model_0209.pt"
+        self.trained_model_path = MODEL_PATH
         self._initUI()
         self._initBackend()
 

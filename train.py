@@ -4,9 +4,9 @@ args = None
 
 def parse_args():
     parser = argparse.ArgumentParser(description='Train ')
-    parser.add_argument('--data_dir', default='D:\\Projects\\Github\\AtomIDNet\\datasets',
+    parser.add_argument('--data_dir', default='./datasets',
                         help='training data directory')
-    parser.add_argument('--save_dir', default='D:\\Projects\\Github\\AtomIDNet\\models',
+    parser.add_argument('--save_dir', default='./models',
                         help='directory to save models.')
     
     parser.add_argument('--pretrained', type=str, default="True",
