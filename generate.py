@@ -258,8 +258,8 @@ class SyntheticTool():
 
 if __name__ == '__main__':
     root_path = '.'
-    save_path = root_path + '\\datasets\\syn'
-    cif_path = root_path + '\\datasets\\cif'
+    save_path = root_path + './datasets/syn'
+    cif_path = root_path + './datasets/cif'
     cif_path_list = getFilelist(cif_path, 'cif')
     
     NUM = 8
@@ -268,9 +268,13 @@ if __name__ == '__main__':
     size = (1024, 1024)
     STool = SyntheticTool(size)
     
+    # create folder
+    if not os.path.exists(save_path):
+        os.mkdir(save_path)
+    
     for cif_file in tqdm(cif_path_list):
         for num in range(NUM):
-            name = cif_file.split('\\')[-1].replace(".cif", "_"+str(num))
+            name = os.path.basename(cif_file).replace(".cif", "_"+str(num))
             atoms = STool.read_atoms(cif_file)
             atoms = STool.expand_atoms(atoms, expand=np.random.randint(45, 75)/10)
             atoms = STool.add_vacancy(atoms, rate=0.05, eff=0.4)
