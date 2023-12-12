@@ -38,7 +38,7 @@ class Trainer():
         '''Load Data'''
         self.train_loader, self.test_loader, self.input_dim, self.output_dim = get_tem_Data(crop_size=args.crop_size,
                                                                                             train_bs=args.batch_size,
-                                                                                            is_syn = False)
+                                                                                            is_syn = bool(args.is_syn))
         
         '''Load Model'''
         if args.resume:

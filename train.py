@@ -26,6 +26,8 @@ def parse_args():
 
     parser.add_argument('--batch_size', type=int, default=32,
                         help='train batch size')
+    parser.add_argument('--is_syn', type=int, default=0,
+                        help='swicth to synthetic datasets')
     parser.add_argument('--device', default='0', help='assign device')
     parser.add_argument('--num_workers', type=int, default=0,
                         help='the num of training process')
