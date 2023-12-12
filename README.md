@@ -39,7 +39,7 @@ Place your meta-data `.cif` files under
 ```
 ./datasets/cif/
 ```
-Modify parameters `OUT_SHAPE` the heights and widths of output synthetic images and `NUM_PER_CIF` counts of images for each cif file in `./generator.py. Run it
+Modify parameters `OUT_SHAPE` the heights and widths of output synthetic images and `NUM_PER_CIF` counts of images for each cif file in `./generator.py`. Run it
 ```
 python generator.py
 ```
