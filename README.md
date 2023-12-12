@@ -29,7 +29,8 @@ Install extra packages for simulation
 ```
 pip install abtem==1.0.0b34
 ```
-Abtem version later than 1.0.0b34 is not supported in this work. And install `Cupy` according to https://docs.cupy.dev/en/stable/install.html, in the demo
+Abtem version later than 1.0.0b34 is not supported in this work. And install `Cupy` according to https://docs.cupy.dev/en/stable/install.html
+In this demo
 ```
 pip install cupy-cuda117
 ```
@@ -38,11 +39,12 @@ Place your meta-data `.cif` files under
 ```
 ./datasets/cif/
 ```
-Run
+Modify parameters `OUT_SHAPE` the heights and widths of output synthetic images and `NUM_PER_CIF` counts of images for each cif file in `./generator.py. Run it
 ```
 python generator.py
 ```
-to generate synthetic training images and coordiantes. Fill in the catalog file `./datasets/tem_unet_syn_train.csv` for training data.
+to generate synthetic training images and coordiantes.
+Fill in the catalog file `./datasets/tem_unet_syn_train.csv` for training data.
 Run
 ```
 python train.py --is_syn 1
