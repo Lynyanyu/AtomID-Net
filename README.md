@@ -61,3 +61,9 @@ and
 ```
 python demo.py
 ```
+
+# Citation
+Please cite us if you are using our codes in your work. 
+```
+Lin, Yanyu & Yan, Zhangyuan & Tsang, Chi Shing Ben & Wong, Lok Wing & Xiaodong, Zheng & Zheng, Fangyuan & Zhao, Jiong & Chen, Ke. (2023). A Multiscale Deep‐Learning Model for Atom Identification from Low‐Signal‐to‐Noise‐Ratio Transmission Electron Microscopy Images. Small Science. 3. 10.1002/smsc.202300031.
+```
